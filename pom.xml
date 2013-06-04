@@ -35,6 +35,11 @@
 		<version>${jetty.version}</version>
 	</dependency>
 	<dependency>
+		<groupId>org.eclipse.jetty</groupId>
+		<artifactId>jetty-webapp</artifactId>
+		<version>${jetty.version}</version>
+	</dependency>
+	<dependency>
 		<groupId>com.hazardousholdings</groupId>
 		<artifactId>sprockets-java</artifactId>
 		<version>${sprockets.version}</version>
