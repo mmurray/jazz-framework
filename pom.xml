@@ -79,6 +79,11 @@
 		<artifactId>compiler</artifactId>
 		<version>${mustache.version}</version>
 	</dependency>
+        <dependency>
+          <groupId>com.newrelic.agent.java</groupId>
+          <artifactId>newrelic-agent</artifactId>
+          <version>2.19.0</version>
+        </dependency>
   </dependencies>
 
   <distributionManagement>
@@ -103,4 +108,16 @@
 			</plugin>
       </plugins>
   </build>
+
+  <repositories>
+      <repository>
+      <id>murz.maven.repo</id>
+      <url>https://github.com/murz/mvn-repo/raw/master</url>
+      <!-- use snapshot version -->
+      <snapshots>
+         <enabled>true</enabled>
+          <updatePolicy>always</updatePolicy>
+       </snapshots>
+    </repository>
+  </repositories>
 </project>
